@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: my-tekapp
+  namespace: my-tekapp
   annotations:
     description: The web server's http port.
   labels:
