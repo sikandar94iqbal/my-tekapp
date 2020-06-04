@@ -53,7 +53,7 @@ spec:
           #   failureThreshold: 3
           ports:
             - containerPort: 8080
-              name: 8081-tcp
+              name: 8080-tcp
               protocol: TCP
             - containerPort: 443
               name: 443-tcp
