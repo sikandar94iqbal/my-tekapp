@@ -67,7 +67,7 @@ metadata:
     stack.appsody.dev/id: nodejs-express
     stack.appsody.dev/version: 0.2.10
   name: my-tekapp
-  namespace: my-tekapp
+  # namespace: my-tekapp
 spec:
   applicationImage: dev.local/my-tekapp
   createKnativeService: false

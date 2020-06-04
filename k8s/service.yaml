@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: my-tekapp
-  namespace: my-tekapp
+  namespace: kabanero
   annotations:
     description: The web server's http port.
   labels:

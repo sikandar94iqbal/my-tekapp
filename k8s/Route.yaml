@@ -3,7 +3,7 @@ apiVersion: v1
 id: my-tekapp-http
 metadata:
   name: my-tekapp
-  namespace: my-tekapp
+  namespace: kabanero
   annotations:
     description: Route for application's http service.
   labels:
