@@ -1,0 +1,16 @@
+kind: Route
+apiVersion: v1
+id: my-tekapp-http
+metadata:
+  name: my-tekapp
+  annotations:
+    description: Route for application's http service.
+  labels:
+    application: my-tekapp
+spec:
+  to:
+    name: my-tekapp
+  port:
+    targetPort: 9443-tcp
+  tls:
+    termination: passthrough
