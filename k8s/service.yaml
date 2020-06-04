@@ -11,7 +11,7 @@ spec:
   ports:
     - name: 8080-tcp
       port: 8080
-      targetPort: 8080
+      targetPort: 3000
       protocol: TCP
     # - name: 443-tcp
     #   port: 443
