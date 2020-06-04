@@ -2,6 +2,7 @@ kind: DeploymentConfig
 apiVersion: apps.openshift.io/v1
 metadata:
   name: my-tekapp
+  namespace: my-tekapp
   labels:
     application: my-tekapp
 spec:
