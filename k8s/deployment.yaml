@@ -43,32 +43,32 @@ spec:
               value: db2inst1
           image: <DOCKER_IMAGE>
           imagePullPolicy: Always
-          livenessProbe:
-            tcpSocket:
-              port: 9443
-            initialDelaySeconds: 45
-            periodSeconds: 45
-            successThreshold: 1
-            timeoutSeconds: 1
-            failureThreshold: 3
+          # livenessProbe:
+          #   tcpSocket:
+          #     port: 9443
+          #   initialDelaySeconds: 45
+          #   periodSeconds: 45
+          #   successThreshold: 1
+          #   timeoutSeconds: 1
+          #   failureThreshold: 3
           ports:
-            - containerPort: 9080
-              name: 9080-tcp
+            - containerPort: 8080
+              name: 8081-tcp
               protocol: TCP
-            - containerPort: 9443
-              name: 9443-tcp
+            - containerPort: 443
+              name: 443-tcp
               protocol: TCP
-            - containerPort: 9082
+            - containerPort: 8081
               name: http
               protocol: TCP
-          readinessProbe:
-            tcpSocket:
-              port: 9443
-            initialDelaySeconds: 90
-            periodSeconds: 5
-            successThreshold: 1
-            timeoutSeconds: 1
-            failureThreshold: 3
+          # readinessProbe:
+          #   tcpSocket:
+          #     port: 9443
+          #   initialDelaySeconds: 90
+          #   periodSeconds: 5
+          #   successThreshold: 1
+          #   timeoutSeconds: 1
+          #   failureThreshold: 3
           securityContext:
             capabilities:
               drop:

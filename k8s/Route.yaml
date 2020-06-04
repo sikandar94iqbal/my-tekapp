@@ -12,6 +12,6 @@ spec:
   to:
     name: my-tekapp
   port:
-    targetPort: 9443-tcp
+    targetPort: 443-tcp
   tls:
     termination: passthrough
