@@ -52,8 +52,8 @@ spec:
           #   timeoutSeconds: 1
           #   failureThreshold: 3
           ports:
-            - containerPort: 3000
-              name: 3000-tcp
+            - containerPort: 8080
+              name: 8080-tcp
               protocol: TCP
             # - containerPort: 443
             #   name: 443-tcp
